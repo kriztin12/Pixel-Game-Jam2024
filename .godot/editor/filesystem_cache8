@@ -1,6 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715693235
+::res://::1715696507
 icon.svg::CompressedTexture2D::3727893747244291170::1715692698::1715692739::1::::<><>::
+Node2D.gd::GDScript::-1::1715696506::0::1::::<>Node2D<>::
+test.dtl::Resource::-1::1715696385::0::1::::<><>::
+test_scene.tscn::PackedScene::4375214651807843073::1715696542::0::1::::<><>::res://Node2D.gd
 ::res://addons/::1715693136
 ::res://addons/dialogic/::1715693141
 plugin.cfg::TextFile::-1::1715693141::0::1::::<><>::
