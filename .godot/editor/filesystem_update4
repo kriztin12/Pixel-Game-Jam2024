@@ -1,4 +1,5 @@
-res://timeline.dtl
-res://Node2D.gd
-res://node_2d.tscn
 res://test_scene.tscn
+res://start_scene.dtl
+res://test_scene.gd
+res://characters/player.dch
+res://style.tres
