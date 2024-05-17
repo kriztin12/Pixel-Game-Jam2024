@@ -1,5 +1,8 @@
-res://test_scene.tscn
-res://start_scene.dtl
-res://test_scene.gd
-res://characters/player.dch
+res://dodgeball_scene.tscn
 res://style.tres
+res://test_scene.tscn
+res://enemy_ball.tscn
+res://dodge_player.tscn
+res://dodge_player.gd
+res://enemy_ball.gd
+res://dodgeball_scene.gd

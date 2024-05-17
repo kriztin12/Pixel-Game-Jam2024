@@ -1,13 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715783432
+::res://::1715967523
+dodgeball_scene.gd::GDScript::-1::1715967269::0::1::::<>Node2D<>::
+dodgeball_scene.tscn::PackedScene::2711845739618798654::1715967482::0::1::::<><>::uid://cv88ykd3csevh::::res://dodge_player.tscn<>res://dodgeball_scene.gd
+dodge_player.gd::GDScript::-1::1715965754::0::1::::<>CharacterBody2D<>::
+dodge_player.tscn::PackedScene::6316978600627357649::1715967482::0::1::::<><>::uid://m8s1l1hpn13i::::res://sprites/Basic Charakter Spritesheet.png<>res://dodge_player.gd
+enemy_ball.gd::GDScript::-1::1715967481::0::1::::<>CharacterBody2D<>::
+enemy_ball.tscn::PackedScene::3960277374372897584::1715967482::0::1::::<><>::uid://ccvghjuexkqft::::res://sprites/ufoGreen.png<>res://enemy_ball.gd
 icon.svg::CompressedTexture2D::3727893747244291170::1715779623::1715779623::1::::<><>::
-kwi_lil.jpeg::CompressedTexture2D::1748307310485030715::1715783432::1715783432::1::::<><>::
-kwi_redlight.png::CompressedTexture2D::3139342719072281737::1715782765::1715782765::1::::<><>::
 README.md::TextFile::-1::1715779623::0::1::::<><>::
-start_scene.dtl::Resource::-1::1715783390::0::1::::<><>::
+start_scene.dtl::Resource::-1::1715784475::0::1::::<><>::
+style.tres::Resource/DialogicStyle::6080134903563728038::1715962468::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
 test.dtl::Resource::-1::1715779623::0::1::::<><>::
 test_scene.gd::GDScript::-1::1715782116::0::1::::<>Node2D<>::
-test_scene.tscn::PackedScene::4375214651807843073::1715782971::0::1::::<><>::res://test_scene.gd
+test_scene.tscn::PackedScene::4375214651807843073::1715967482::0::1::::<><>::res://test_scene.gd
 ::res://addons/::1715779623
 ::res://addons/dialogic/::1715779623
 plugin.cfg::TextFile::-1::1715779623::0::1::::<><>::
@@ -288,7 +293,7 @@ icon_character.png::CompressedTexture2D::4229580660901790674::1715779623::171577
 icon_position.png::CompressedTexture2D::6240753079284806829::1715779623::1715779623::1::::<><>::
 index.gd::GDScript::-1::1715779623::0::1::::<>DialogicIndexer<>::
 node_portrait_container.gd::GDScript::-1::1715779623::0::1::::DialogicNode_PortraitContainer<>Control<>::
-preview_character.tres::Resource/DialogicCharacter::8864788605870491990::1715779623::0::1::::<><>::res://addons/dialogic/Resources/character.gd
+preview_character.tres::Resource/Resource::8864788605870491990::1715779623::0::1::::<><>::res://addons/dialogic/Resources/character.gd
 settings_portraits.gd::GDScript::-1::1715779623::0::1::::<>DialogicSettingsPage<>::
 settings_portraits.tscn::PackedScene::5887474122682821078::1715779623::0::1::::<><>::res://addons/dialogic/Modules/Character/settings_portraits.gd<>uid://dbpkta2tjsqim::::res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn<>uid://dpwhshre1n4t6::::res://addons/dialogic/Editor/Events/Fields/field_options_dynamic.tscn<>uid://7mvxuaulctcq::::res://addons/dialogic/Editor/Events/Fields/field_file.tscn
 subsystem_portraits.gd::GDScript::-1::1715779623::0::1::::<>DialogicSubsystem<>::
@@ -445,13 +450,13 @@ vn_textbox_name_label_panel.tres::StyleBoxFlat::908733606549242590::1715779623::
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_SpeakerTextbox/::1715779623
 part_config.cfg::TextFile::-1::1715779623::0::1::::<><>::
 preview.png::CompressedTexture2D::8025234003730989842::1715779623::1715779623::1::::<><>::
-speaker_textbox_style.tres::Resource/DialogicStyle::7601804504371859326::1715779623::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+speaker_textbox_style.tres::Resource/Resource::7601804504371859326::1715779623::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_TextBubbles/::1715779623
 part_config.cfg::TextFile::-1::1715779623::0::1::::<><>::
 preview.png::CompressedTexture2D::1244020212817713961::1715779623::1715779623::1::::<><>::
-textbubble_style.tres::Resource/DialogicStyle::4178401552284372098::1715779623::0::1::::<><>::uid://syki6k0e6aac::::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn<>res://addons/dialogic/Resources/dialogic_style.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn
+textbubble_style.tres::Resource/Resource::4178401552284372098::1715779623::0::1::::<><>::uid://syki6k0e6aac::::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn<>res://addons/dialogic/Resources/dialogic_style.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_VN_Default/::1715779623
-default_vn_style.tres::Resource/DialogicStyle::2357056026045195210::1715779623::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
+default_vn_style.tres::Resource/Resource::2357056026045195210::1715779623::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
 part_config.cfg::TextFile::-1::1715779623::0::1::::<><>::
 preview.png::CompressedTexture2D::1793830588723612143::1715779623::1715779623::1::::<><>::
 ::res://addons/dialogic/Modules/End/::1715779623
@@ -583,5 +588,8 @@ event.gd::GDScript::-1::1715779623::0::1::::DialogicEvent<>Resource<>::
 timeline.gd::GDScript::-1::1715779623::0::1::::DialogicTimeline<>Resource<>::
 TimelineResourceLoader.gd::GDScript::-1::1715779623::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<>::
 TimelineResourceSaver.gd::GDScript::-1::1715779623::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
-::res://characters/::1715782784
-player.dch::Resource::-1::1715782784::0::1::::<><>::
+::res://characters/::1715784459
+player.dch::Resource::-1::1715784459::0::1::::<><>::
+::res://sprites/::1715963646
+Basic Charakter Spritesheet.png::CompressedTexture2D::911530544312086240::1644603182::1715963646::1::::<><>::
+ufoGreen.png::CompressedTexture2D::4956948293830583997::1715962916::1715962916::1::::<><>::
