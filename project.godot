@@ -23,7 +23,8 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"player": "res://characters/player.dch"
+"player": "res://characters/player.dch",
+"player2": "res://player2.dch"
 }
 directories/dtl_directory={
 "start_scene": "res://start_scene.dtl",

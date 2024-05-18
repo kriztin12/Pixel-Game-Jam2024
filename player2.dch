@@ -10,7 +10,7 @@
 },
 "default_portrait": "idle",
 "description": "",
-"display_name": "{playerName}",
+"display_name": "player2",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

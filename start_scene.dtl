@@ -2,7 +2,8 @@
 What's your name?
 [text_input text="Please enter your name:" var="playerName" placeholder="Player"]
 Oh your name is.... {playerName}?
-join player 1
+join player 0
+join player2 3
 Ah ha so you're {playerName}
 This is a choice
 - Yes

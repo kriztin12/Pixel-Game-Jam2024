@@ -8,3 +8,9 @@ res://scenes/idle_arrow_left.tscn
 res://scenes/move_arrow_up.tscn
 res://scripts/move_arrow_left.gd
 res://scripts/move_arrow_right.gd
+res://scripts/dodgeball_scene.gd
+res://scripts/dance_scene.gd
+res://characters/player.dch
+res://test_scene.tscn
+res://player2.dch
+res://start_scene.dtl

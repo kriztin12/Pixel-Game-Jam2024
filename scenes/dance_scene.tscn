@@ -1,12 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://7vmmrrkb2jms"]
+[gd_scene load_steps=5 format=3 uid="uid://7vmmrrkb2jms"]
 
-[ext_resource type="PackedScene" uid="uid://dfj1sq25x0ddc" path="res://scenes/move_arrow_left.tscn" id="1_h2tqd"]
 [ext_resource type="Script" path="res://scripts/dance_scene.gd" id="1_qluli"]
 [ext_resource type="PackedScene" uid="uid://bjf2n3hte84s0" path="res://scenes/idle_arrow_left.tscn" id="3_h1n4h"]
 [ext_resource type="PackedScene" uid="uid://cgel162lk6w6b" path="res://scenes/idle_arrow_right.tscn" id="4_k5kh8"]
-[ext_resource type="PackedScene" uid="uid://d0uj8a81lu1td" path="res://scenes/move_arrow_right.tscn" id="5_18p1p"]
 [ext_resource type="PackedScene" uid="uid://u28866qesat7" path="res://scenes/idle_arrow_up.tscn" id="6_ytdaw"]
-[ext_resource type="PackedScene" uid="uid://b1rubfmwg70iv" path="res://scenes/move_arrow_up.tscn" id="7_01u6f"]
 
 [node name="Dance" type="Node2D"]
 script = ExtResource("1_qluli")
@@ -16,20 +13,25 @@ visible = false
 offset_right = 129.0
 offset_bottom = 109.0
 
-[node name="Move_ArrowLeft" parent="." instance=ExtResource("1_h2tqd")]
-position = Vector2(24, 88)
+[node name="Create" type="Node2D" parent="."]
 
-[node name="Idle_ArrowLeft" parent="." instance=ExtResource("3_h1n4h")]
-position = Vector2(24, 16)
+[node name="Marker2D_ArrowLeft" type="Marker2D" parent="Create"]
+position = Vector2(24, 96)
 
-[node name="Idle_ArrowRight" parent="." instance=ExtResource("4_k5kh8")]
-position = Vector2(104, 16)
+[node name="Marker2D_ArrowUp" type="Marker2D" parent="Create"]
+position = Vector2(64, 96)
 
-[node name="Move_ArrowRight" parent="." instance=ExtResource("5_18p1p")]
-position = Vector2(104, 88)
+[node name="Marker2D_ArrowRight" type="Marker2D" parent="Create"]
+position = Vector2(104, 96)
 
 [node name="Idle_ArrowUp" parent="." instance=ExtResource("6_ytdaw")]
-position = Vector2(64, 16)
+position = Vector2(64, 24)
 
-[node name="Move_ArrowUp" parent="." instance=ExtResource("7_01u6f")]
-position = Vector2(64, 88)
+[node name="Idle_ArrowRight" parent="." instance=ExtResource("4_k5kh8")]
+position = Vector2(104, 24)
+
+[node name="Idle_ArrowLeft" parent="." instance=ExtResource("3_h1n4h")]
+position = Vector2(24, 24)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
