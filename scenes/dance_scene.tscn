@@ -19,16 +19,16 @@ offset_bottom = 109.0
 position = Vector2(24, 104)
 
 [node name="Marker2D_ArrowUp" type="Marker2D" parent="Create"]
-position = Vector2(64, 104)
+position = Vector2(48, 104)
 
 [node name="Marker2D_ArrowRight" type="Marker2D" parent="Create"]
-position = Vector2(104, 104)
+position = Vector2(72, 104)
 
 [node name="Idle_ArrowUp" parent="." instance=ExtResource("6_ytdaw")]
-position = Vector2(64, 24)
+position = Vector2(48, 24)
 
 [node name="Idle_ArrowRight" parent="." instance=ExtResource("4_k5kh8")]
-position = Vector2(104, 24)
+position = Vector2(72, 24)
 
 [node name="Idle_ArrowLeft" parent="." instance=ExtResource("3_h1n4h")]
 position = Vector2(24, 24)

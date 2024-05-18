@@ -1,25 +1,149 @@
-[gd_scene load_steps=4 format=3 uid="uid://u28866qesat7"]
+[gd_scene load_steps=10 format=3 uid="uid://u28866qesat7"]
 
-[ext_resource type="Texture2D" uid="uid://caccy4ija05so" path="res://sprites/dance_sprites/arrow_button_up1.png" id="1_b4yl3"]
 [ext_resource type="Script" path="res://scripts/idle_arrow_up.gd" id="1_ltjgm"]
+[ext_resource type="Texture2D" uid="uid://d37wp5ltnmha7" path="res://sprites/dance_sprites/up_arrow_bland.png" id="2_tmffa"]
+[ext_resource type="Texture2D" uid="uid://u3bxkfteol20" path="res://sprites/dance_sprites/up_arrow.png" id="3_nd4m2"]
+[ext_resource type="Texture2D" uid="uid://bk2n2ijg75iql" path="res://sprites/dance_sprites/up_arrow_bad.png" id="4_w6bsm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfkme"]
-size = Vector2(24, 24)
+size = Vector2(13, 16)
+
+[sub_resource type="Animation" id="Animation_rprcx"]
+resource_name = "Good"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteGood:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteGood:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_d8g71"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteGood:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteGood:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpriteBad:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SpriteBad:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0tyvb"]
+resource_name = "Bad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteBad:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteBad:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0dsiq"]
+_data = {
+"Bad": SubResource("Animation_0tyvb"),
+"Good": SubResource("Animation_rprcx"),
+"RESET": SubResource("Animation_d8g71")
+}
 
 [node name="Idle_ArrowUp" type="Area2D"]
 script = ExtResource("1_ltjgm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_sfkme")
 
 [node name="SpriteIdle" type="Sprite2D" parent="."]
-texture = ExtResource("1_b4yl3")
+texture = ExtResource("2_tmffa")
 
 [node name="SpriteGood" type="Sprite2D" parent="."]
-texture = ExtResource("1_b4yl3")
+visible = false
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("3_nd4m2")
 
 [node name="SpriteBad" type="Sprite2D" parent="."]
-texture = ExtResource("1_b4yl3")
+visible = false
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("4_w6bsm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0dsiq")
+}
 
 [connection signal="area_shape_entered" from="." to="." method="_on_idle_arrow_up_area_shape_entered"]
 [connection signal="area_shape_exited" from="." to="." method="_on_idle_arrow_up_area_shape_exited"]

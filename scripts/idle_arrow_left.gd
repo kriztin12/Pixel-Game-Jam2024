@@ -1,5 +1,6 @@
 extends Area2D
 
+@onready var animation = $AnimationPlayer
 var sensor = 0
 
 func _process(delta):
@@ -7,12 +8,12 @@ func _process(delta):
 	if sensor == 1:
 		if Input.is_action_just_pressed("ui_left"):
 			## add animation here
-			print("good")
+			animation.play("Good")
 	
 	if sensor == 0:
 		if Input.is_action_just_pressed("ui_left"):
 			# add animation here
-			print("bad")
+			animation.play("Bad")
 
 func _on_idle_arrowleft_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	sensor = 1

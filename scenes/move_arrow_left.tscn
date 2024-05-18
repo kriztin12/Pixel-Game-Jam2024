@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfj1sq25x0ddc"]
 
 [ext_resource type="Script" path="res://scripts/move_arrow_left.gd" id="1_atrul"]
-[ext_resource type="Texture2D" uid="uid://coy5h7oqx8m5o" path="res://sprites/dance_sprites/arrow_button_left1.png" id="2_gj8ts"]
+[ext_resource type="Texture2D" uid="uid://dc6qihrv1ru58" path="res://sprites/dance_sprites/left_arrow.png" id="2_yiprr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7jric"]
-size = Vector2(24, 24)
+size = Vector2(16, 14)
 
 [node name="Move_ArrowLeft" type="Area2D"]
 script = ExtResource("1_atrul")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_gj8ts")
+texture = ExtResource("2_yiprr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_7jric")

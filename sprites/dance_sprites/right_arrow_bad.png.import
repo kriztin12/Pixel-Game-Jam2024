@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coy5h7oqx8m5o"
-path="res://.godot/imported/arrow_button_left1.png-242c6040380521d244f8062048a6be1d.ctex"
+uid="uid://cln8cqnlijtjg"
+path="res://.godot/imported/right_arrow_bad.png-3ae665f6354ae3d8ed94227a3b111aed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/dance_sprites/arrow_button_left1.png"
-dest_files=["res://.godot/imported/arrow_button_left1.png-242c6040380521d244f8062048a6be1d.ctex"]
+source_file="res://sprites/dance_sprites/right_arrow_bad.png"
+dest_files=["res://.godot/imported/right_arrow_bad.png-3ae665f6354ae3d8ed94227a3b111aed.ctex"]
 
 [params]
 

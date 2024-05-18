@@ -1,10 +1,76 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjf2n3hte84s0"]
+[gd_scene load_steps=10 format=3 uid="uid://bjf2n3hte84s0"]
 
-[ext_resource type="Texture2D" uid="uid://coy5h7oqx8m5o" path="res://sprites/dance_sprites/arrow_button_left1.png" id="1_sqv1c"]
 [ext_resource type="Script" path="res://scripts/idle_arrow_left.gd" id="1_xy1v2"]
+[ext_resource type="Texture2D" uid="uid://chdtnn4yctyco" path="res://sprites/dance_sprites/left_arrow_bland.png" id="2_eepul"]
+[ext_resource type="Texture2D" uid="uid://dc6qihrv1ru58" path="res://sprites/dance_sprites/left_arrow.png" id="3_yohte"]
+[ext_resource type="Texture2D" uid="uid://dbm5o4s8cxdtr" path="res://sprites/dance_sprites/left_arrow_bad.png" id="4_h7y8g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ylvc"]
-size = Vector2(24, 24)
+size = Vector2(16, 14)
+
+[sub_resource type="Animation" id="Animation_amfhy"]
+resource_name = "Bad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteBad:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteBad:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_ida8g"]
+resource_name = "Good"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteGood:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteGood:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_etism"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hraw5"]
+_data = {
+"Bad": SubResource("Animation_amfhy"),
+"Good": SubResource("Animation_ida8g"),
+"RESET": SubResource("Animation_etism")
+}
 
 [node name="Idle_ArrowLeft" type="Area2D"]
 script = ExtResource("1_xy1v2")
@@ -13,13 +79,21 @@ script = ExtResource("1_xy1v2")
 shape = SubResource("RectangleShape2D_8ylvc")
 
 [node name="SpriteIdle" type="Sprite2D" parent="."]
-texture = ExtResource("1_sqv1c")
+texture = ExtResource("2_eepul")
 
 [node name="SpriteGood" type="Sprite2D" parent="."]
-texture = ExtResource("1_sqv1c")
+visible = false
+texture = ExtResource("3_yohte")
 
 [node name="SpriteBad" type="Sprite2D" parent="."]
-texture = ExtResource("1_sqv1c")
+visible = false
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("4_h7y8g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hraw5")
+}
 
 [connection signal="area_shape_entered" from="." to="." method="_on_idle_arrowleft_area_shape_entered"]
 [connection signal="area_shape_exited" from="." to="." method="_on_idle_arrowleft_area_shape_exited"]
