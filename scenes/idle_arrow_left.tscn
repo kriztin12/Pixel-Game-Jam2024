@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjf2n3hte84s0"]
+
+[ext_resource type="Texture2D" uid="uid://coy5h7oqx8m5o" path="res://sprites/dance_sprites/arrow_button_left1.png" id="1_sqv1c"]
+[ext_resource type="Script" path="res://scripts/idle_arrow_left.gd" id="1_xy1v2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ylvc"]
+size = Vector2(24, 24)
+
+[node name="Idle_ArrowLeft" type="Area2D"]
+script = ExtResource("1_xy1v2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8ylvc")
+
+[node name="SpriteIdle" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqv1c")
+
+[node name="SpriteGood" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqv1c")
+
+[node name="SpriteBad" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqv1c")
+
+[connection signal="area_shape_entered" from="." to="." method="_on_idle_arrowleft_area_shape_entered"]
+[connection signal="area_shape_exited" from="." to="." method="_on_idle_arrowleft_area_shape_exited"]

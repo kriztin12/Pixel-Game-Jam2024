@@ -15,7 +15,7 @@ script = ExtResource("1_tiru4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 128.0
-offset_bottom = 118.0
+offset_bottom = 109.0
 texture = ExtResource("2_hhmer")
 
 [node name="DodgePlayer" parent="." instance=ExtResource("3_jxh7h")]
