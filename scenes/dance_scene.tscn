@@ -16,13 +16,13 @@ offset_bottom = 109.0
 [node name="Create" type="Node2D" parent="."]
 
 [node name="Marker2D_ArrowLeft" type="Marker2D" parent="Create"]
-position = Vector2(24, 96)
+position = Vector2(24, 104)
 
 [node name="Marker2D_ArrowUp" type="Marker2D" parent="Create"]
-position = Vector2(64, 96)
+position = Vector2(64, 104)
 
 [node name="Marker2D_ArrowRight" type="Marker2D" parent="Create"]
-position = Vector2(104, 96)
+position = Vector2(104, 104)
 
 [node name="Idle_ArrowUp" parent="." instance=ExtResource("6_ytdaw")]
 position = Vector2(64, 24)
@@ -35,3 +35,5 @@ position = Vector2(24, 24)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
