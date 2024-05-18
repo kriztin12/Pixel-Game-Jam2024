@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cv88ykd3csevh"]
 
 [ext_resource type="Texture2D" uid="uid://m8s1l1hpn13i" path="res://sprites/Basic Charakter Spritesheet.png" id="1_dcjev"]
-[ext_resource type="Script" path="res://dodge_player.gd" id="1_u70lc"]
+[ext_resource type="Script" path="res://scripts/dodge_player.gd" id="1_u70lc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_txf8c"]
 size = Vector2(12, 16)

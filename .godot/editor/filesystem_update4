@@ -3,6 +3,5 @@ res://style.tres
 res://test_scene.tscn
 res://enemy_ball.tscn
 res://dodge_player.tscn
-res://dodge_player.gd
-res://enemy_ball.gd
-res://dodgeball_scene.gd
+res://scenes/dodgeball_scene.tscn
+res://scripts/dodgeball_scene.gd

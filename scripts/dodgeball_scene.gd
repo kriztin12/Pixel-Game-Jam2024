@@ -4,7 +4,7 @@ extends Node2D
 # Spawn more balls!
 # When ball collides with player, start timeline
 
-var enemyBallScene = preload("res://enemy_ball.tscn")
+var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
 	
 func _ready():
 	$MobTimer.start()

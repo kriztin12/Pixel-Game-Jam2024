@@ -1,18 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715967523
-dodgeball_scene.gd::GDScript::-1::1715967269::0::1::::<>Node2D<>::
-dodgeball_scene.tscn::PackedScene::2711845739618798654::1715967482::0::1::::<><>::uid://cv88ykd3csevh::::res://dodge_player.tscn<>res://dodgeball_scene.gd
-dodge_player.gd::GDScript::-1::1715965754::0::1::::<>CharacterBody2D<>::
-dodge_player.tscn::PackedScene::6316978600627357649::1715967482::0::1::::<><>::uid://m8s1l1hpn13i::::res://sprites/Basic Charakter Spritesheet.png<>res://dodge_player.gd
-enemy_ball.gd::GDScript::-1::1715967481::0::1::::<>CharacterBody2D<>::
-enemy_ball.tscn::PackedScene::3960277374372897584::1715967482::0::1::::<><>::uid://ccvghjuexkqft::::res://sprites/ufoGreen.png<>res://enemy_ball.gd
+::res://::1716018321
+enemy_ball.tscn::PackedScene::3960277374372897584::1716018321::0::1::::<><>::uid://ccvghjuexkqft::::res://sprites/ufoGreen.png<>res://scripts/enemy_ball.gd
 icon.svg::CompressedTexture2D::3727893747244291170::1715779623::1715779623::1::::<><>::
 README.md::TextFile::-1::1715779623::0::1::::<><>::
 start_scene.dtl::Resource::-1::1715784475::0::1::::<><>::
-style.tres::Resource/DialogicStyle::6080134903563728038::1715962468::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
+style.tres::Resource/DialogicStyle::6080134903563728038::1716017915::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
 test.dtl::Resource::-1::1715779623::0::1::::<><>::
 test_scene.gd::GDScript::-1::1715782116::0::1::::<>Node2D<>::
-test_scene.tscn::PackedScene::4375214651807843073::1715967482::0::1::::<><>::res://test_scene.gd
+test_scene.tscn::PackedScene::4375214651807843073::1716018265::0::1::::<><>::res://test_scene.gd
 ::res://addons/::1715779623
 ::res://addons/dialogic/::1715779623
 plugin.cfg::TextFile::-1::1715779623::0::1::::<><>::
@@ -590,6 +585,15 @@ TimelineResourceLoader.gd::GDScript::-1::1715779623::0::1::::DialogicTimelineFor
 TimelineResourceSaver.gd::GDScript::-1::1715779623::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
 ::res://characters/::1715784459
 player.dch::Resource::-1::1715784459::0::1::::<><>::
-::res://sprites/::1715963646
+::res://scenes/::1716018316
+dodgeball_scene.tscn::PackedScene::2711845739618798654::1716018316::0::1::::<><>::res://scripts/dodgeball_scene.gd<>uid://buibipfesw8cl::::res://sprites/dodgeball_sprites/dodgeball.png<>uid://cv88ykd3csevh::::res://scenes/dodge_player.tscn
+dodge_player.tscn::PackedScene::6316978600627357649::1716018313::0::1::::<><>::uid://m8s1l1hpn13i::::res://sprites/Basic Charakter Spritesheet.png<>res://scripts/dodge_player.gd
+::res://scripts/::1716018321
+dodgeball_scene.gd::GDScript::-1::1715969204::0::1::::<>Node2D<>::
+dodge_player.gd::GDScript::-1::1715967716::0::1::::<>CharacterBody2D<>::
+enemy_ball.gd::GDScript::-1::1715968968::0::1::::<>Area2D<>::
+::res://sprites/::1716018078
 Basic Charakter Spritesheet.png::CompressedTexture2D::911530544312086240::1644603182::1715963646::1::::<><>::
 ufoGreen.png::CompressedTexture2D::4956948293830583997::1715962916::1715962916::1::::<><>::
+::res://sprites/dodgeball_sprites/::1716018132
+dodgeball.png::CompressedTexture2D::3806788377611205475::1716018132::1716018132::1::::<><>::
