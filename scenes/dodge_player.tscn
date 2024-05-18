@@ -1,18 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://cv88ykd3csevh"]
 
-[ext_resource type="Texture2D" uid="uid://m8s1l1hpn13i" path="res://sprites/Basic Charakter Spritesheet.png" id="1_dcjev"]
 [ext_resource type="Script" path="res://scripts/dodge_player.gd" id="1_u70lc"]
+[ext_resource type="Texture2D" uid="uid://dyftaoii7nb60" path="res://sprites/dodgeball_sprites/dodgeplayer.png" id="2_q31y8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_txf8c"]
-size = Vector2(12, 16)
+size = Vector2(14, 19)
 
 [node name="DodgePlayer" type="CharacterBody2D"]
 script = ExtResource("1_u70lc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.5)
 shape = SubResource("RectangleShape2D_txf8c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_dcjev")
-hframes = 4
-vframes = 4
+texture = ExtResource("2_q31y8")

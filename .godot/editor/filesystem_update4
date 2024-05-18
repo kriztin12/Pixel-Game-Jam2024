@@ -1,11 +1,4 @@
-res://scenes/idle_arrow_left.tscn
-res://styles/styles.tres
 res://scenes/dodgeball_scene.tscn
-res://scenes/dance_scene.tscn
-res://test_scene.tscn
-res://scenes/move_arrow_left.tscn
-res://scenes/move_arrow_right.tscn
-res://scenes/idle_arrow_right.tscn
-res://scenes/idle_arrow_up.tscn
-res://scripts/idle_arrow_right.gd
-res://scripts/idle_arrow_up.gd
+res://styles/styles.tres
+res://scenes/dodge_player.tscn
+res://scenes/enemy_ball.tscn

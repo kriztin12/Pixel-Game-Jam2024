@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2tv47ho0sg20"
-path="res://.godot/imported/dodgeball.png-8b7aec8c2e358ecde34ca0b82b460c0c.ctex"
+uid="uid://dyftaoii7nb60"
+path="res://.godot/imported/dodgeplayer.png-89f3817d24b56f0161c18e79f75fd1bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/dodgeball_sprites/dodgeball.png"
-dest_files=["res://.godot/imported/dodgeball.png-8b7aec8c2e358ecde34ca0b82b460c0c.ctex"]
+source_file="res://sprites/dodgeball_sprites/dodgeplayer.png"
+dest_files=["res://.godot/imported/dodgeplayer.png-89f3817d24b56f0161c18e79f75fd1bb.ctex"]
 
 [params]
 

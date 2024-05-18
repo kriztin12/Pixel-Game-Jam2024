@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bevvx52wpofnq"]
 
 [ext_resource type="Script" path="res://scripts/dodgeball_scene.gd" id="1_tiru4"]
-[ext_resource type="Texture2D" uid="uid://buibipfesw8cl" path="res://sprites/dodgeball_sprites/dodgeball.png" id="2_hhmer"]
+[ext_resource type="Texture2D" uid="uid://d2tv47ho0sg20" path="res://sprites/dodgeball_sprites/dodgeball.png" id="2_6hsyj"]
 [ext_resource type="PackedScene" uid="uid://cv88ykd3csevh" path="res://scenes/dodge_player.tscn" id="3_jxh7h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y5x7w"]
@@ -19,10 +19,10 @@ script = ExtResource("1_tiru4")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 128.0
 offset_bottom = 109.0
-texture = ExtResource("2_hhmer")
+texture = ExtResource("2_6hsyj")
 
 [node name="DodgePlayer" parent="." instance=ExtResource("3_jxh7h")]
-position = Vector2(63, 72)
+position = Vector2(64, 79)
 
 [node name="Area2D2" type="Area2D" parent="DodgePlayer"]
 
