@@ -23,10 +23,11 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"player": "res://characters/player.dch",
-"player2": "res://player2.dch"
+"krillito": "res://sprites/dodgeball_sprites/krillito.dch",
+"player": "res://characters/player.dch"
 }
 directories/dtl_directory={
+"dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
 "start_scene": "res://start_scene.dtl",
 "test": "res://test.dtl"
 }

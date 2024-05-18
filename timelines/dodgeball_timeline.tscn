@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn4uxe08dvnvh"]
+
+[ext_resource type="Script" path="res://timelines/dodgeball_timeline.gd" id="1_5gw14"]
+
+[node name="DodgeballTimeline" type="Node2D"]
+script = ExtResource("1_5gw14")

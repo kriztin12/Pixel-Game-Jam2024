@@ -1,0 +1,7 @@
+[background arg="res://sprites/dodgeball_sprites/ouch.png" fade="1.0"]
+BAM!!!
+[background arg="res://sprites/dodgeball_sprites/dodgeball.png" fade="1.0" transition="Simple Fade"]
+join krillito (Idle) 3 [animation="Slide In Right"]
+krillito: Watch it, new fish!
+player: Ouch
+krillito: Hm...

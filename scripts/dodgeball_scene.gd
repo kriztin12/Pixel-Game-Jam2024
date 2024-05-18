@@ -5,7 +5,6 @@ extends Node2D
 # When ball collides with player, start timeline
 
 var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
-var dialogue = preload("res://test_scene.tscn").instantiate()
 	
 func _ready():
 	# resize screen
@@ -25,4 +24,4 @@ func _on_mob_timer_timeout():
 
 func _on_area_2d_2_rea_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	# add sound a 'bang'
-	get_tree().change_scene_to_file("res://test_scene.tscn")
+	get_tree().change_scene_to_file("res://timelines/dodgeball_timeline.tscn")
