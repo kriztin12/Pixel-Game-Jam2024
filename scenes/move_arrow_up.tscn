@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1rubfmwg70iv"]
+
+[ext_resource type="Script" path="res://scripts/move_arrow_up.gd" id="1_jxikt"]
+[ext_resource type="Texture2D" uid="uid://caccy4ija05so" path="res://sprites/dance_sprites/arrow_button_up1.png" id="1_mjg31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuffc"]
+size = Vector2(24, 24)
+
+[node name="Move_ArrowUp" type="Area2D"]
+script = ExtResource("1_jxikt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xuffc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mjg31")
+
+[connection signal="area_shape_entered" from="." to="." method="_on_move_arrow_up_area_shape_entered"]
+[connection signal="area_shape_exited" from="." to="." method="_on_move_arrow_up_area_shape_exited"]
