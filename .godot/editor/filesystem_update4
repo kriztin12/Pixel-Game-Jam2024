@@ -12,3 +12,4 @@ res://timelines/dodgeball_timeline.tscn
 res://timelines/dodgeball_timeline.gd
 res://scripts/dodgeball_scene.gd
 res://scripts/dodge_player.gd
+res://scenes/menu.tscn
