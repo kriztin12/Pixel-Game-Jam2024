@@ -29,8 +29,8 @@ directories/dtl_directory={
 "test": "res://test.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://style.tres"]
-layout/default_style="res://style.tres"
+layout/style_list=["res://styles/styles.tres"]
+layout/default_style="res://styles/styles.tres"
 variables={
 "playerName": ""
 }
@@ -57,7 +57,7 @@ window/size/viewport_width=128
 window/size/viewport_height=108
 window/size/window_width_override=1280
 window/size/window_height_override=720
-window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 

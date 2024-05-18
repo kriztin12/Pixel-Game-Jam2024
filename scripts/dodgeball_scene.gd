@@ -7,6 +7,7 @@ extends Node2D
 var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
 	
 func _ready():
+	get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
 	$MobTimer.start()
 	
 func spawn_mob():
