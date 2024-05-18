@@ -14,3 +14,6 @@ res://characters/player.dch
 res://test_scene.tscn
 res://player2.dch
 res://start_scene.dtl
+res://scenes/dodge_player.tscn
+res://scripts/dodge_player.gd
+res://test_scene.gd

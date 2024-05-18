@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bevvx52wpofnq"]
+[gd_scene load_steps=6 format=3 uid="uid://bevvx52wpofnq"]
 
 [ext_resource type="Script" path="res://scripts/dodgeball_scene.gd" id="1_tiru4"]
 [ext_resource type="Texture2D" uid="uid://buibipfesw8cl" path="res://sprites/dodgeball_sprites/dodgeball.png" id="2_hhmer"]
 [ext_resource type="PackedScene" uid="uid://cv88ykd3csevh" path="res://scenes/dodge_player.tscn" id="3_jxh7h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5x7w"]
+size = Vector2(12.5, 16)
 
 [sub_resource type="Curve2D" id="Curve2D_yw7cr"]
 _data = {
@@ -21,6 +24,11 @@ texture = ExtResource("2_hhmer")
 [node name="DodgePlayer" parent="." instance=ExtResource("3_jxh7h")]
 position = Vector2(63, 72)
 
+[node name="Area2D2" type="Area2D" parent="DodgePlayer"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DodgePlayer/Area2D2"]
+shape = SubResource("RectangleShape2D_y5x7w")
+
 [node name="MobPath" type="Path2D" parent="."]
 position = Vector2(0.664879, -1.5)
 scale = Vector2(0.335121, 1.5)
@@ -34,4 +42,5 @@ rotation = 0.00649342
 [node name="MobTimer" type="Timer" parent="."]
 autostart = true
 
+[connection signal="area_shape_entered" from="DodgePlayer/Area2D2" to="DodgePlayer" method="_on_area_2d_2_area_shape_entered"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
