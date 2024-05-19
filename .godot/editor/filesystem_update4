@@ -14,3 +14,4 @@ res://addons/dialogic/Editor/Events/styles/InputFieldsStyle.tres
 res://scripts/dodgeball_scene.gd
 res://scenes/dodgeball_menu.tscn
 res://scripts/dodgeball_menu.gd
+res://scripts/enemy_ball.gd

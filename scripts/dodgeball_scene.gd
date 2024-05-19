@@ -2,10 +2,9 @@ extends Node2D
 
 # TODO: 
 # Spawn more balls!
-# When ball collides with player, start timeline
 
 var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
-	
+var count = 0
 func _ready():
 	# resize screen
 	get_tree().root.content_scale_factor = 1
@@ -21,6 +20,9 @@ func spawn_mob():
 
 func _on_mob_timer_timeout():
 	spawn_mob()
+	count += 1
+	if count > 5:
+		spawn_mob()
 
 
 func _on_area_2d_2_rea_shape_entered(area_rid, area, area_shape_index, local_shape_index):

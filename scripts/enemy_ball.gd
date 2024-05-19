@@ -11,4 +11,7 @@ func _physics_process(delta):
 	if (direction != null):
 		var movement_vector = Vector2.from_angle(direction) * 150 * delta
 		global_position += movement_vector
-
+	
+	if position.x > 200:
+		queue_free()
+		print('bye bye')
