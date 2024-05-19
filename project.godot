@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scripts/global.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SceneManager="*res://scripts/scene_manager.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -32,7 +32,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
-"start_scene": "res://start_scene.dtl",
+"prologue": "res://timelines/prologue.dtl",
+"start_scene": "res://timelines/start_scene.dtl",
 "test": "res://test.dtl"
 }
 glossary/default_case_sensitive=true

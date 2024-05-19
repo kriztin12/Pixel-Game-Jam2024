@@ -32,3 +32,4 @@ jellychan: And besides... You have me!
 jellychan: Now come on, you're not gonna make any friends by staying here!
 leave jellychan
 do SceneManager.change_scene("res://scenes/dodgeball_scene.tscn")
+[end_timeline]
