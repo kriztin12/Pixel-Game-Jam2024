@@ -1,7 +1,22 @@
 [background arg="res://sprites/dodgeball_sprites/ouch.png" fade="1.0"]
 BAM!!!
 [background arg="res://sprites/dodgeball_sprites/dodgeball.png" fade="1.0" transition="Simple Fade"]
+mystery: Watch it, new fish!
 join krillito (Idle) 3 [animation="Slide In Right"]
-krillito: Watch it, new fish!
-player: Ouch
-krillito: Hm...
+player: Ouch... I look up and I see an orange red tint-
+mystery: Hey, I’m talking to you, new fish! Watch it.
+mystery: Be careful next time, will ya?
+- Who do you think you're talking to?
+	mystery: Hmph, someone's got a bit of attitude...
+- Oh, I'm sorry
+	mystery: Be careful next time will ya?
+mystery: What's your name anyways, new fish?
+krillito: {playerName}... huh? Cute name, new fish.
+player: Ey stop calling me new fish!
+krillito: Well you are one anyways, new fish. I'm Krillito by the way
+krillito: You swim like you’ve never had fins before.
+~ah! he might know I’m not from here!
+krillito: *waves fins* You doze off a lot huh, sleepyhead.
+ANNOUNCEMENT- Good afternoon students, club day is today and if you haven’t joined a club yet, consider doing so!
+krillito: Alright, I’ll let you go. I’m in the Band club if you’re interested in getting your fins to good use... anyways bye.
+[end_timeline]

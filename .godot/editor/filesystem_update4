@@ -15,3 +15,6 @@ res://scripts/dodgeball_scene.gd
 res://scenes/dodgeball_menu.tscn
 res://scripts/dodgeball_menu.gd
 res://scripts/enemy_ball.gd
+res://timelines/dodgeball_scene.dtl
+res://characters/player.dch
+res://characters/mystery.dch

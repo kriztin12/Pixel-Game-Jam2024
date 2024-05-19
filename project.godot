@@ -25,6 +25,7 @@ SceneManager="*res://scripts/scene_manager.gd"
 
 directories/dch_directory={
 "krillito": "res://sprites/dodgeball_sprites/krillito.dch",
+"mystery": "res://characters/mystery.dch",
 "player": "res://characters/player.dch"
 }
 directories/dtl_directory={
