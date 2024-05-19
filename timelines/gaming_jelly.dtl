@@ -1,0 +1,23 @@
+[background fade="0.0"]
+[sound path="res://sounds/pew.wav" volume="0.0"]
+[wait time="1.0"]
+[sound path="res://sounds/pew.wav" volume="0.0"]
+[wait time="1.0"]
+[sound path="res://sounds/win.wav" volume="0.0"]
+mystery: HIGH SCORE!!!
+player: Is somebody there?
+mystery: Ah- Shellfishes! I thought I locked the door...
+join jellychan (Jellychan Default) 2
+[wait time="1.0"]
+jellychan (Jellychan Happy): Oh, It's you {playerName}!
+jellychan: Um... Please don't tell anyone about this! It's super embarrassing...
+- Don't worry about it, I love video games too!
+	jellychan (Jellychan Happy): Awh, you're so sweet hehe.
+- Yeah... It is embarrassing...
+	jellychan (Jellychan Default): Ouch... You sure are blunt {playerName}.
+jellychan (Jellychan Smile): Well since you're here, why don't we play together~!
+jellychan (Jellychan Happy): Winner gets to ask the loser anything they want.
+This is my chance!
+Maybe she knows how to turn me back to normal...
+player: Let's play Jelly-Chan!
+jellychan: Hehe, I knew I could count on you~!

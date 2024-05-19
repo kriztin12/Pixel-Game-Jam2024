@@ -34,6 +34,7 @@ directories/dtl_directory={
 "after_dance": "res://timelines/after_dance.dtl",
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
 "enter_school": "res://timelines/enter_school.dtl",
+"gaming_jelly": "res://timelines/gaming_jelly.dtl",
 "prologue": "res://timelines/prologue.dtl",
 "start_scene": "res://timelines/start_scene.dtl",
 "test": "res://test.dtl"
