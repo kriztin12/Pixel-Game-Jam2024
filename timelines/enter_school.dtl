@@ -10,5 +10,4 @@ jellychan: It's okay! That cute T-Shirt of yours should be just fine.
 jellychan: Class will be the same as always. Dodgeball! 
 jellychan: Come on, I'll swim you over there.
 do SceneManager.change_scene("res://scenes/dodgeball_menu.tscn")
-[sound path="res://sounds/pew.wav" volume="0.0"]
 [end_timeline]
