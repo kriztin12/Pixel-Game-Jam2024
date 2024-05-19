@@ -34,8 +34,8 @@ directories/dtl_directory={
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
 "enter_school": "res://timelines/enter_school.dtl",
 "prologue": "res://timelines/prologue.dtl",
-"test": "res://test.dtl",
-"timelines/start_scene": "res://timelines/start_scene.dtl"
+"start_scene": "res://timelines/start_scene.dtl",
+"test": "res://test.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://styles/styles.tres"]

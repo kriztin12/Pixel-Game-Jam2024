@@ -2,3 +2,12 @@ label school
 [background arg="res://backgrounds/school-bg.png" fade="0.0"]
 join jellychan 2
 jellychan (Jellychan Happy): We're here! Aqua High in all its glory.
+jellychan: By the way, you and I are in the same class.
+jellychan: Class 1-Sea hehe.
+jellychan: We've got P.E. for first period, but...
+jellychan: It looks like you don't have any uniform... Or... Anything for that matter.
+jellychan: It's okay! That cute T-Shirt of yours should be just fine.
+jellychan: Class will be the same as always. Dodgeball! 
+jellychan: Come on, I'll swim you over there.
+do SceneManager.change_scene("res://scenes/dodgeball_menu.tscn")
+[end_timeline]
