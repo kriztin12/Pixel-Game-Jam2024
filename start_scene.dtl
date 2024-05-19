@@ -24,10 +24,11 @@ jellychan: Wait- I haven’t seen you around before, what’s your name?
 jellychan: {playerName}? That’s a cute name!
 jellychan: {playerName}... So you must be the new transfer student!
 player: Transfer student...? No- you don’t understand I...
-join player 0
-join player2 3
-Ah ha so you're {playerName}
-This is a choice
-- Yes
-- No
-im hacking the main frame
+player: Um... Where am I?
+jellychan: Huh? Did Victor knock your head in that hard? Ah... If only I came earlier!
+player: No, I'm fine! I- I'm not from here...
+jellychan: Well obviously, you just transferred! Don't worry you're super cute so you'll fit right in.
+jellychan: And besides... You have me!
+jellychan: Now come on, you're not gonna make any friends by staying here!
+leave jellychan
+do SceneManager.change_scene("res://scenes/dodgeball_scene.tscn")

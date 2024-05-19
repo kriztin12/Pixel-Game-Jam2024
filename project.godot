@@ -28,7 +28,6 @@ directories/dch_directory={
 "krillito": "res://sprites/dodgeball_sprites/krillito.dch",
 "mystery": "res://characters/mystery.dch",
 "player": "res://characters/player.dch",
-"player2": "res://player2.dch",
 "victor": "res://characters/victor.dch"
 }
 directories/dtl_directory={
