@@ -9,12 +9,14 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			## add animation here
 			Global.good_up = 1
+			Global.score += 10
 			animation.play("Good")
 			
 	if sensor == 0:
 		if Input.is_action_just_pressed("ui_up"):
 			# add animation here
 			animation.play("Bad")
+			Global.score -= 5
 			Global.bad = 1
 
 

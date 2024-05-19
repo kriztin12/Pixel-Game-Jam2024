@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://7vmmrrkb2jms"]
+[gd_scene load_steps=11 format=3 uid="uid://7vmmrrkb2jms"]
 
 [ext_resource type="Script" path="res://scripts/dance_scene.gd" id="1_qluli"]
 [ext_resource type="Texture2D" uid="uid://dd1105tdm4l0b" path="res://sprites/dance_sprites/dance_bg.png" id="2_5g4tr"]
@@ -7,6 +7,11 @@
 [ext_resource type="PackedScene" path="res://scenes/krillito_dance.tscn" id="5_apipk"]
 [ext_resource type="PackedScene" path="res://scenes/player_dance.tscn" id="6_vfstt"]
 [ext_resource type="PackedScene" uid="uid://u28866qesat7" path="res://scenes/idle_arrow_up.tscn" id="6_ytdaw"]
+[ext_resource type="AudioStream" uid="uid://dasavntol20w5" path="res://sounds/rhodes.mp3" id="8_v565b"]
+[ext_resource type="FontFile" uid="uid://dq5ltovg35rtn" path="res://font/PressStart2P-Regular.ttf" id="9_wkyrm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bjfbx"]
+font = ExtResource("9_wkyrm")
 
 [node name="Dance" type="Node2D"]
 script = ExtResource("1_qluli")
@@ -46,4 +51,19 @@ position = Vector2(94, 64)
 [node name="Player_Dance" parent="." instance=ExtResource("6_vfstt")]
 position = Vector2(32, 72)
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_v565b")
+
+[node name="SongTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_right = 112.0
+offset_bottom = 16.0
+label_settings = SubResource("LabelSettings_bjfbx")
+horizontal_alignment = 1
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="SongTimer" to="." method="_on_song_timer_timeout"]

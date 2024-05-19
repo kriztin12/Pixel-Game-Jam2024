@@ -31,6 +31,7 @@ directories/dch_directory={
 "victor": "res://characters/victor.dch"
 }
 directories/dtl_directory={
+"after_dance": "res://timelines/after_dance.dtl",
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
 "enter_school": "res://timelines/enter_school.dtl",
 "prologue": "res://timelines/prologue.dtl",

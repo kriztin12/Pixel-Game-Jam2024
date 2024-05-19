@@ -9,6 +9,7 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_left"):
 			## add animation here
 			Global.good_left = 1
+			Global.score += 10
 			animation.play("Good")
 			
 	
@@ -16,6 +17,7 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_left"):
 			# add animation here
 			animation.play("Bad")
+			Global.score -= 5
 			Global.bad = 1
 
 func _on_idle_arrowleft_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):

@@ -1,9 +1,7 @@
 extends Node2D
 
 # TODO
-# score
 # end game
-# song
 
 const ArrowLeft = preload("res://scenes/move_arrow_left.tscn")
 const ArrowRight = preload("res://scenes/move_arrow_right.tscn")
@@ -15,15 +13,15 @@ var RNG = RandomNumberGenerator.new()
 func _ready():
 	# resize screen
 	get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
+	$AudioStreamPlayer2D.play()
 
 func _process(delta):
-	pass
-
+	$Label.text = str(Global.score)
 
 func _on_timer_timeout():
 	$Timer.start()
 	RNG.randomize()
-	var random_int = RNG.randi_range(0, 3)
+	var random_int = RNG.randi_range(1, 3)
 	random = random_int
 	
 	# random 1 - 3
@@ -42,3 +40,7 @@ func _on_timer_timeout():
 		get_parent().add_child(au)
 		au.position = $Create/Marker2D_ArrowUp.global_position
 	
+
+func _on_song_timer_timeout():
+	$AudioStreamPlayer2D.stop()
+	pass
