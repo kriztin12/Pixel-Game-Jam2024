@@ -1,6 +1,8 @@
 [background arg="res://sprites/dodgeball_sprites/ouch.png" fade="1.0"]
+[sound path="res://sounds/hit01.wav" volume="0.0"]
 BAM!!!
 [background arg="res://sprites/dodgeball_sprites/dodgeball.png" fade="1.0" transition="Simple Fade"]
+[music path="res://sounds/02_seaside_village.wav" fade="0.0" volume="0.0"]
 mystery: Watch it, new fish!
 join krillito (Idle) 3 [animation="Slide In Right"]
 player: Ouch... I look up and I see an orange red tint-

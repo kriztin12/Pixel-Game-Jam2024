@@ -13,3 +13,5 @@ var good_left = 0
 var bad = 0
 
 var score = 0
+
+var ball_count = 0

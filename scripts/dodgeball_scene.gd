@@ -1,8 +1,5 @@
 extends Node2D
 
-# TODO: 
-# Spawn more balls!
-
 var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
 var count = 0
 func _ready():
@@ -20,8 +17,8 @@ func spawn_mob():
 
 func _on_mob_timer_timeout():
 	spawn_mob()
-	count += 1
-	if count > 5:
+	Global.ball_count += 1
+	if Global.ball_count > 5:
 		spawn_mob()
 
 

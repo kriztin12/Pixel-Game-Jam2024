@@ -33,8 +33,8 @@ directories/dch_directory={
 directories/dtl_directory={
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
 "prologue": "res://timelines/prologue.dtl",
-"start_scene": "res://timelines/start_scene.dtl",
-"test": "res://test.dtl"
+"test": "res://test.dtl",
+"timelines/start_scene": "res://timelines/start_scene.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://styles/styles.tres"]

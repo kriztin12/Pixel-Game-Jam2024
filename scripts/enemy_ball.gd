@@ -6,10 +6,14 @@ extends Area2D
 # 
 @onready var direction = global_position.angle_to_point(lastLocation)
 
+var speed = 150 
+
 func _physics_process(delta):
-	#
+	if Global.ball_count > 5:
+		speed = 300
+		
 	if (direction != null):
-		var movement_vector = Vector2.from_angle(direction) * 150 * delta
+		var movement_vector = Vector2.from_angle(direction) * speed * delta
 		global_position += movement_vector
 	
 	if position.x > 200:
