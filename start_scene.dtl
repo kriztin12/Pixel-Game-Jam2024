@@ -1,13 +1,33 @@
+[background arg="bg.png" fade="0.0"]
 [style name="style"]
-What's your name?
+Huh... Where am I? Am I dead?!
+*PINCH*
+OUCH!!!
+Well... I don’t think dead people feel pain...
+Huh?! WAIT?!
+WHAT THE HECK IS THAT???!!!
+I look down at my... Feet? TAIL?! WHY DO I HAVE A TAIL?
+Now that I think about it, I’m not drowning either...
+join victor (Victor Default) 1
+victor: Well will you look at that... Fresh chum just waiting to be devoured.
+victor: You’re walking on Victor’s territory now! I’ll rule these seas and then she’ll have to notice me... My cute Je-
+join jellychan (Jellychan Angry) 3
+mystery: Hey Victor knock it off!
+mystery: If you have nothing nice to say then shark off!
+victor (Victor Shy): J-Jelly Chan?!! It’s not what it looks like I- I was just joking HAHA um... You’re in luck this time fish face!
+leave victor
+leave jellychan
+join jellychan (Jellychan Smile) 2
+jellychan: Are you okay? I hope he didn’t hurt you...
+jellychan: Wait- I haven’t seen you around before, what’s your name?
 [text_input text="Please enter your name:" var="playerName" placeholder="Player"]
-Oh your name is.... {playerName}?
+jellychan: {playerName}? That’s a cute name!
+jellychan: {playerName}... So you must be the new transfer student!
+player: Transfer student...? No- you don’t understand I...
 join player 0
-join krillito 3
+join player2 3
 Ah ha so you're {playerName}
 This is a choice
 - Yes
 - No
 im hacking the main frame
-do SceneManager.change_scene("res://scenes/dodgeball_menu.tscn")
-[end_timeline]

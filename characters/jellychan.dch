@@ -1,0 +1,56 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Jellychan Default",
+"description": "",
+"display_name": "jellychan",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Jellychan Angry": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Jellychan Default": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Jellychan Happy": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Jellychan Smile": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_smile.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}
