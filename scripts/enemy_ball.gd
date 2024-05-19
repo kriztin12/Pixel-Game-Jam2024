@@ -11,6 +11,9 @@ var speed = 150
 func _physics_process(delta):
 	if Global.ball_count > 5:
 		speed = 300
+	
+	if Global.ball_count >= 10:
+		speed = 500
 		
 	if (direction != null):
 		var movement_vector = Vector2.from_angle(direction) * speed * delta

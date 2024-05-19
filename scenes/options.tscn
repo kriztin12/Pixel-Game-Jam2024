@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwb1hq3h4rh8k"]
+
+[ext_resource type="Script" path="res://scripts/options.gd" id="1_fr1a3"]
+[ext_resource type="Script" path="res://scripts/Volume.gd" id="2_xokl0"]
+[ext_resource type="AudioStream" uid="uid://dmva0q0pleivu" path="res://sounds/02_seaside_village.wav" id="3_3vt5y"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fr1a3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Master Vol:"
+
+[node name="Volume" type="HSlider" parent="Panel/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("2_xokl0")
+bus_name = "Master"
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_3vt5y")
+autoplay = true
+
+[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_back_button_pressed"]
