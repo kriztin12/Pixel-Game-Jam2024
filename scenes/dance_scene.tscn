@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/dance_scene.gd" id="1_qluli"]
 [ext_resource type="PackedScene" uid="uid://bjf2n3hte84s0" path="res://scenes/idle_arrow_left.tscn" id="3_h1n4h"]
 [ext_resource type="PackedScene" uid="uid://cgel162lk6w6b" path="res://scenes/idle_arrow_right.tscn" id="4_k5kh8"]
-[ext_resource type="PackedScene" uid="uid://clcdxbc6maqx7" path="res://scenes/krillito_dance.tscn" id="5_apipk"]
+[ext_resource type="PackedScene" path="res://scenes/krillito_dance.tscn" id="5_apipk"]
 [ext_resource type="PackedScene" uid="uid://u28866qesat7" path="res://scenes/idle_arrow_up.tscn" id="6_ytdaw"]
 
 [node name="Dance" type="Node2D"]
