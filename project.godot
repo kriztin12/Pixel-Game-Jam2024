@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pixel Game Jam"
-run/main_scene="res://test_scene.tscn"
+run/main_scene="res://scenes/start_scene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -32,6 +32,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
+"enter_school": "res://timelines/enter_school.dtl",
 "prologue": "res://timelines/prologue.dtl",
 "test": "res://test.dtl",
 "timelines/start_scene": "res://timelines/start_scene.dtl"

@@ -1,0 +1,4 @@
+label school
+[background arg="res://backgrounds/school-bg.png" fade="0.0"]
+join jellychan 2
+jellychan (Jellychan Happy): We're here! Aqua High in all its glory.

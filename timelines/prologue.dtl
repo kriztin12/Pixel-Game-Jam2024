@@ -11,5 +11,5 @@ Ah-
 [background arg="res://sprites/dodgeball_sprites/ouch.png" fade="0.0"]
 [sound path="res://sounds/splash.wav" volume="0.0"]
 [wait time="2.0"]
-do SceneManager.change_scene("res://test_scene.tscn")
+do SceneManager.change_scene("res://scenes/start_scene.tscn")
 [end_timeline]
