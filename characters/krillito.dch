@@ -26,7 +26,7 @@
 },
 "Dodgeball": {
 "export_overrides": {
-"image": ""
+"image": "\"res://sprites/character_sprites/krillito_dodgeball.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

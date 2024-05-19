@@ -12,6 +12,7 @@ var RNG = RandomNumberGenerator.new()
 
 func _ready():
 	# resize screen
+	get_tree().root.content_scale_factor = 1
 	get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
 	$AudioStreamPlayer2D.play()
 

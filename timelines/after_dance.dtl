@@ -1,21 +1,23 @@
-[background arg="res://backgrounds/school-bg.png" fade="0.0"]
+[background arg="res://sprites/dodgeball_sprites/ouch.png" fade="0.0"]
+*Music ends*
+[background arg="res://sprites/dance_sprites/far.png" fade="0.0"]
 join krillito 2
 krillito: Wow {playerName}, you've got some fin game!
-player: Thank you >///<
+player: Hehe thank you.
 krillito: I'm curious, what's your favorite type of music to dance to?
 - Pop
 	krillito: Oh... I'm not so good with this, maybe you can teach me next time...
 - Hip Hop
-	krillito: Yes! The energy and rhythm just make me want to dance all night
+	krillito: Yes! The energy and rhythm just make me want to dance all night.
 - Rock
-	krillito: You've got great energy! I love to just take out my guitar and rock all night
+	krillito: You've got great energy! I love to just take out my guitar and rock all night.
 - Chill
-	krillito: Ahh yes, it's good to slow down once in a while
-krillito: I'm really into rock, Seavana is my favorite band
-krillito: I know this really cool record shop called Sea Dees just a block from our school
+	krillito: Ahh yes, it's good to slow down once in a while.
+krillito: I'm really into rock, Seavana is my favorite band.
+krillito: I know this really cool record shop called Sea Dees just a block from our school.
 krillito: Maybe we can go sometime?
 - Sure!
-	krillito: Cool, I'll see you after school, new fish
+	krillito: Cool, I'll see you after school, new fish.
 - Uh... no thanks
-	krillito: Right... 
+	krillito: Right...
 leave krillito

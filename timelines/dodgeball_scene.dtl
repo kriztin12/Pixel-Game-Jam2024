@@ -4,8 +4,8 @@ BAM!!!
 [background arg="res://sprites/dodgeball_sprites/dodgeball.png" fade="1.0" transition="Simple Fade"]
 [music path="res://sounds/02_seaside_village.wav" fade="0.0" volume="0.0"]
 mystery: Watch it, new fish!
-join krillito (Idle) 3 [animation="Slide In Right"]
-player: Ouch... I look up and I see an orange red tint-
+join krillito (Dodgeball) 2 [animation="Slide In Right"]
+player: Ouch... I look up and I see an red orange tint-
 mystery: Hey, I’m talking to you, new fish! Watch it.
 mystery: Be careful next time, will ya?
 - Who do you think you're talking to?
@@ -20,5 +20,42 @@ krillito: You swim like you’ve never had fins before.
 ~ah! he might know I’m not from here!
 krillito: *waves fins* You doze off a lot huh, sleepyhead.
 ANNOUNCEMENT- Good afternoon students, club day is today and if you haven’t joined a club yet, consider doing so!
-krillito: Alright, I’ll let you go. I’m in the Band club if you’re interested in getting your fins to good use... anyways bye.
+krillito: Alright, I’ll let you go. I’m in the Dance club if you’re interested in getting your fins to good use... anyways bye.
+leave krillito
+[background arg="res://backgrounds/school-bg.png" fade="0.0"]
+player: Now that I've got some alone time and have time to gather my thoughts...
+player: Hmmm... I need to know what's going on... maybe I should join the Dance Club to get more info.
+You suddenly hear a weird tapping sound from a room.
+Do you...
+- Investigate the weird noise
+	You swim towards the dark room.
+- Check out the Dance Club
+	You swim towards the Dance Club.
+	jump krillito scene
+label krillito scene
+# Add swim sound here sound
+[sound volume="0.0"]
+You hear music playing and peek through the window-
+join krillito 2 [animation="Slide In Up"]
+krillito: BOO!
+player: AH!
+krillito: Heh, what you doing floating around?
+player: Um... oh yes! I want to try out the Dance Club.
+krillito: *looks back to club members* Make space, we got new fish!
+krillito: *grabs your wrist* Come in, don't be shy.
+[background arg="res://sprites/dance_sprites/far.png" fade="0.0"]
+leave krillito
+join krillito 3
+join victor (Victor Default) 1
+victor: Fancy seeing you here fresh chum. Dare to challenge me?
+krillito: Hey come on now... *drags you away from Victor*
+leave victor
+leave krillito
+krillito: Yea.. he's like that with newbies.
+join krillito 2
+krillito: Good thing I'm here right?
+mystery: C'mon lets turn it up and dance!
+krillito: Hey newbie, you hear that? Dance with me.
+[music fade="0.0" volume="0.0"]
+do SceneManager.change_scene("res://scenes/dance_menu.tscn")
 [end_timeline]
