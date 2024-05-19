@@ -8,14 +8,14 @@ func _process(delta):
 	if sensor == 1:
 		if Input.is_action_just_pressed("ui_up"):
 			## add animation here
+			Global.good_up = 1
 			animation.play("Good")
 			
-	
 	if sensor == 0:
 		if Input.is_action_just_pressed("ui_up"):
 			# add animation here
 			animation.play("Bad")
-
+			Global.bad = 1
 
 
 func _on_idle_arrow_up_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
@@ -26,3 +26,4 @@ func _on_idle_arrow_up_area_shape_entered(area_rid, area, area_shape_index, loca
 func _on_idle_arrow_up_area_shape_exited(area_rid, area, area_shape_index, local_shape_index):
 	sensor = 0
 	Global.sensor_up = 0
+	#Global.good_up = 0

@@ -1,5 +1,10 @@
 extends Node2D
 
+# TODO
+# score
+# end game
+# song
+
 const ArrowLeft = preload("res://scenes/move_arrow_left.tscn")
 const ArrowRight = preload("res://scenes/move_arrow_right.tscn")
 const ArrowUp = preload("res://scenes/move_arrow_up.tscn")
