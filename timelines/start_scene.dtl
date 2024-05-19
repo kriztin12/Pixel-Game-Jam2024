@@ -1,4 +1,4 @@
-[background arg="bg.png" fade="0.0"]
+[background arg="res://backgrounds/background_underwater.png" fade="0.0"]
 [style name="style"]
 Huh... Where am I? Am I dead?!
 *PINCH*

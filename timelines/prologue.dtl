@@ -12,3 +12,4 @@ Ah-
 [sound path="res://sounds/splash.wav" volume="0.0"]
 [wait time="2.0"]
 do SceneManager.change_scene("res://test_scene.tscn")
+[end_timeline]
