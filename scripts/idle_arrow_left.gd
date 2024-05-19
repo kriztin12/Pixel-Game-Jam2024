@@ -9,6 +9,7 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_left"):
 			## add animation here
 			animation.play("Good")
+			
 	
 	if sensor == 0:
 		if Input.is_action_just_pressed("ui_left"):
