@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bp5o1de7uoium"]
+[gd_scene load_steps=12 format=3 uid="uid://bp5o1de7uoium"]
 
 [ext_resource type="Texture2D" uid="uid://bbw4e5q4xqje0" path="res://sprites/sea_invaders_sprites/sea_invaders_bg.png" id="1_3dhci"]
 [ext_resource type="Script" path="res://scripts/sea_invaders.gd" id="1_oh0wg"]
 [ext_resource type="PackedScene" uid="uid://b37j421wyjdkg" path="res://scenes/sea_invaders_player.tscn" id="2_0vbmp"]
 [ext_resource type="FontFile" uid="uid://dq5ltovg35rtn" path="res://font/PressStart2P-Regular.ttf" id="4_l31n6"]
 [ext_resource type="Shader" path="res://shaders/dodgeball.gdshader" id="5_bpj6k"]
+[ext_resource type="AudioStream" uid="uid://bjx2abin8ov2c" path="res://sounds/win.wav" id="6_yytjr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xk7ow"]
 size = Vector2(20, 33)
@@ -90,6 +91,10 @@ horizontal_alignment = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDeathZone"]
 position = Vector2(64, 118)
 shape = SubResource("RectangleShape2D_h2yqo")
+
+[node name="HighScoreSound" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_yytjr")
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
 [connection signal="area_entered" from="EnemyDeathZone" to="." method="_on_enemy_death_zone_area_entered"]

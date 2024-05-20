@@ -2,6 +2,7 @@ extends Node2D
 
 var enemyScene = preload("res://scenes/sea_invaders_enemy.tscn")
 @onready var player = get_node("SeaInvadersPlayer")
+var highscore_hit = false
 
 func _ready():
 	# resize screen
@@ -27,9 +28,15 @@ func _process(delta):
 			$HealthSprite.texture = preload("res://sprites/sea_invaders_sprites/heart_one.png")
 			
 	%ScoreLabel.text = str(Global.player_score)
+	
+	if Global.player_score == 500 and !highscore_hit:
+		highscore()
 
 
 func _on_enemy_death_zone_area_entered(area):
 	area.queue_free()
 	player.player_damage()
 	
+func highscore():
+	%HighScoreSound.play()
+	highscore_hit = true

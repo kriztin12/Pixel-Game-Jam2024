@@ -15,6 +15,7 @@ func _physics_process(delta):
 		can_shoot = false
 	
 func shoot():
+	%ShootSound.play()
 	const PROJECTILE = preload("res://scenes/sea_invaders_projectile.tscn")
 	var new_projectile = PROJECTILE.instantiate()
 	%ShootingPoint.add_child(new_projectile)

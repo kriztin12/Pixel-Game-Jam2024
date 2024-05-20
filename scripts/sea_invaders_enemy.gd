@@ -1,11 +1,13 @@
 extends Area2D
 
-const SPEED = 50.0
+var speed = 60.0
 
 func _physics_process(delta):
-	global_position.y += SPEED * delta
+	if Global.player_score >= 250:
+		speed = 80
+	global_position.y += speed * delta
 
 func take_damage():
 	Global.player_score += 20
-	print(Global.player_score)
 	queue_free()
+
