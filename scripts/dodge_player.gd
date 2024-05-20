@@ -13,4 +13,4 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_area_2d_2_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	get_tree().change_scene_to_file("res://timelines/dodgeball_timeline.tscn")
+	get_tree().change_scene_to_file("res://scenes/dodgeball_timeline.tscn")

@@ -29,9 +29,13 @@ You suddenly hear a weird tapping sound from a room.
 Do you...
 - Investigate the weird noise
 	You swim towards the dark room.
+	jump jelly chan scene
 - Check out the Dance Club
 	You swim towards the Dance Club.
 	jump krillito scene
+label jelly chan scene
+do SceneManager.change_scene("res://scenes/gaming_jelly.tscn")
+[end_timeline]
 label krillito scene
 # Add swim sound here sound
 [sound volume="0.0"]

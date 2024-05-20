@@ -2,6 +2,7 @@ extends Node2D
 
 var enemyBallScene = preload("res://scenes/enemy_ball.tscn")
 var count = 0
+
 func _ready():
 	# resize screen
 	get_tree().root.content_scale_factor = 1
@@ -21,7 +22,3 @@ func _on_mob_timer_timeout():
 	if Global.ball_count > 5:
 		spawn_mob()
 
-
-func _on_area_2d_2_rea_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	# add sound a 'bang'
-	get_tree().change_scene_to_file("res://timelines/dodgeball_timeline.tscn")

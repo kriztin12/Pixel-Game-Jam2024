@@ -4,14 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://dd1105tdm4l0b" path="res://sprites/dance_sprites/dance_bg.png" id="2_5g4tr"]
 [ext_resource type="PackedScene" uid="uid://bjf2n3hte84s0" path="res://scenes/idle_arrow_left.tscn" id="3_h1n4h"]
 [ext_resource type="PackedScene" uid="uid://cgel162lk6w6b" path="res://scenes/idle_arrow_right.tscn" id="4_k5kh8"]
-[ext_resource type="PackedScene" path="res://scenes/krillito_dance.tscn" id="5_apipk"]
-[ext_resource type="PackedScene" path="res://scenes/player_dance.tscn" id="6_vfstt"]
+[ext_resource type="PackedScene" uid="uid://clcdxbc6maqx7" path="res://scenes/krillito_dance.tscn" id="5_apipk"]
+[ext_resource type="PackedScene" uid="uid://bpbgjdi013vhn" path="res://scenes/player_dance.tscn" id="6_vfstt"]
 [ext_resource type="PackedScene" uid="uid://u28866qesat7" path="res://scenes/idle_arrow_up.tscn" id="6_ytdaw"]
 [ext_resource type="AudioStream" uid="uid://dasavntol20w5" path="res://sounds/rhodes.mp3" id="8_v565b"]
 [ext_resource type="FontFile" uid="uid://dq5ltovg35rtn" path="res://font/PressStart2P-Regular.ttf" id="9_wkyrm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bjfbx"]
 font = ExtResource("9_wkyrm")
+font_size = 8
 
 [node name="Dance" type="Node2D"]
 script = ExtResource("1_qluli")
@@ -60,8 +61,9 @@ autostart = true
 
 [node name="Label" type="Label" parent="."]
 offset_left = 16.0
+offset_top = 6.0
 offset_right = 112.0
-offset_bottom = 16.0
+offset_bottom = 22.0
 label_settings = SubResource("LabelSettings_bjfbx")
 horizontal_alignment = 1
 

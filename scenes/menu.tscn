@@ -27,7 +27,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2sdfm")
-expand_mode = 2
+expand_mode = 5
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

@@ -24,7 +24,7 @@ func _on_timer_timeout():
 	RNG.randomize()
 	var random_int = RNG.randi_range(1, 3)
 	random = random_int
-	
+
 	# random 1 - 3
 	if random == 1:
 		var al = ArrowLeft.instantiate()

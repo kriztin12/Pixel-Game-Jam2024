@@ -4,6 +4,7 @@
 join krillito 2
 krillito: Wow {playerName}, you've got some fin game!
 player: Hehe thank you.
+I really enjoyed dancing with you.
 krillito: I'm curious, what's your favorite type of music to dance to?
 - Pop
 	krillito: Oh... I'm not so good with this, maybe you can teach me next time...
@@ -29,8 +30,10 @@ krillito: Oh uh... it's a school, why?
 ah he must think I'm dumb! I think I'll explore more to get answers.
 player: Ah.. sorry it's stupid... I'll see you after school then.
 krillito: Hehe you're funny, see ya new fish.
+player: <Empty Text Event>
 leave krillito
 [background arg="res://backgrounds/background_underwater.png" fade="0.0"]
 [style]
 We hope you enjoyed the game! This is our first ever game jam and we hope to polish this game out more to create a full game. 
 Thanks for playing, see you on the flip side \:) 
+do SceneManager.change_scene("res://scenes/menu.tscn")
