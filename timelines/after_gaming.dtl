@@ -1,0 +1,34 @@
+join jellychan 2
+if {playerScore} >= 500:
+	jellychan (Jellychan Happy): I must say I'm impressed!
+	jellychan: Are you sure this is your first time playing?
+	jellychan: As promised, you get to ask me anything! 
+	jellychan: Within reason of course...
+	- How do I get to land?
+		jellychan (Jellychan Smile): Land...?
+		jellychan: I'm not sure why you would want to go up there but who am I to judge...
+		jellychan: Swimming will only take you so far so there's no point in trying that out
+		jellychan: You'll just get exhausted before you could even see the sky!
+		jellychan: But I might know someone that could help us...
+		jellychan: Meet me at the rooftop after school, and make sure you're alone!
+		jellychan: I'll see you soon~ hehe
+	- Will you be my girlfriend?
+		jellychan (Jellychan Shy): U-Um {playerName}... I think you're really cute and all but...
+		jellychan (Jellychan Embarrassed): Don't you think this is a little too quick!
+		jellychan (Jellychan Smile): But... I wouldn't mind going on a date with you...
+		Wait... I was supposed to ask about how to get back to my human self!
+		Oh well... I guess I could ask her more on our date.
+		player: That sounds great Jelly-Chan! I look forward to it.
+		jellychan: It's a date then~! I'll see you after school hehe.
+else:
+	jellychan (Jellychan Happy): Yay, another win for me!
+	jellychan (Jellychan Smile): It's okay cutie, I'll teach you some tips and tricks next time.
+	jellychan (Jellychan Smile): Hehe I get to ask you a question now.
+	jellychan: Would you... Like to go to the arcade with me after school...?
+	- Of course!
+		jellychan: Really? Yay! 
+		jellychan: It's a date then~! I'll see you after school hehe.
+	- No thanks...
+		jellychan: Ouch {playerName}... you sure know how to break a girl's heart...
+jellychan: Well I gotta head off now! 
+jellychan: I'll see you later {playerName}~!

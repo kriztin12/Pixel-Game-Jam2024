@@ -35,4 +35,5 @@ func player_damage():
 	Global.player_health -= 1
 	print(Global.player_health)
 	if Global.player_health == 0:
-		get_tree().change_scene_to_file("res://timelines/dodgeball_timeline.tscn")
+		Dialogic.VAR.playerScore = Global.player_score
+		get_tree().change_scene_to_file("res://scenes/after_gaming.tscn")

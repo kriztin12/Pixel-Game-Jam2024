@@ -33,9 +33,27 @@
 "scale": 1,
 "scene": ""
 },
+"Jellychan Embarrassed": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_embarrassed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "Jellychan Happy": {
 "export_overrides": {
 "image": "\"res://sprites/character_sprites/jelly_chan_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Jellychan Shy": {
+"export_overrides": {
+"image": "\"res://sprites/character_sprites/jelly_chan_shy.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
