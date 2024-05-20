@@ -22,7 +22,7 @@ shader_parameter/water_tint = Color(0.2, 0.6, 1, 0.1)
 shader_parameter/speed = 0.1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qb14"]
-size = Vector2(19, 115)
+size = Vector2(19, 112)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhim3"]
 size = Vector2(20, 109)
@@ -72,7 +72,7 @@ grow_vertical = 2
 [node name="Barrier" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier"]
-position = Vector2(-12.5, 53.5)
+position = Vector2(-12.5, 55)
 shape = SubResource("RectangleShape2D_0qb14")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Barrier"]

@@ -6,7 +6,8 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_kgbl0"]
 font = ExtResource("2_u464r")
-font_color = Color(0, 0, 0, 1)
+font_size = 20
+font_color = Color(0.181798, 0.181798, 0.181798, 1)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -44,11 +45,11 @@ grow_vertical = 0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = -64.0
-offset_top = -82.0
-offset_right = 136.0
-offset_bottom = -7.0
-text = "The time I was Isekai'd as a fish"
+offset_left = -63.0
+offset_top = -58.0
+offset_right = 137.0
+offset_bottom = 31.0
+text = "Fishekai"
 label_settings = SubResource("LabelSettings_kgbl0")
 horizontal_alignment = 1
 autowrap_mode = 2

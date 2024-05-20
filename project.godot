@@ -34,6 +34,7 @@ directories/dtl_directory={
 "after_dance": "res://timelines/after_dance.dtl",
 "after_gaming": "res://timelines/after_gaming.dtl",
 "dodgeball_scene": "res://timelines/dodgeball_scene.dtl",
+"end_scene": "res://timelines/end_scene.dtl",
 "enter_school": "res://timelines/enter_school.dtl",
 "gaming_jelly": "res://timelines/gaming_jelly.dtl",
 "prologue": "res://timelines/prologue.dtl",
@@ -68,6 +69,7 @@ text/autopauses={}
 
 window/size/viewport_width=128
 window/size/viewport_height=108
+window/size/resizable=false
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/scale_mode="integer"

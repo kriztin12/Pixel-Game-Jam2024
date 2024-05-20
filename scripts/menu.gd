@@ -9,6 +9,8 @@ func _on_play_button_pressed():
 	# reset global values before start game
 	Global.score = 0
 	Global.ball_count = 0
+	Global.player_health = 3
+	Global.player_score = 0
 	get_tree().change_scene_to_file("res://scenes/prologue.tscn")
 
 
