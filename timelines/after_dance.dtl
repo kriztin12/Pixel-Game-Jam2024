@@ -21,6 +21,7 @@ krillito (Smile): Maybe we can go sometime?
 	krillito (Smile): Cool, I'll see you after school, new fish.
 - Uh... no thanks
 	krillito: Right...
+	krillito: Either way, I'll be at Sea Dees if you ever change your mind, new fish.
 player: Wait! Don't go yet.
 krillito (Default): Hmm? What was it?
 player: I had a question... I hope you don't think I'm crazy.
@@ -30,6 +31,6 @@ krillito: Oh uh... it's a school, why?
 ah he must think I'm dumb! I think I'll explore more to get answers.
 player: Ah.. sorry it's stupid... I'll see you after school then.
 krillito: Hehe you're funny, see ya new fish.
-player: <Empty Text Event>
 leave krillito
 do SceneManager.change_scene("res://scenes/end_scene.tscn")
+[end_timeline]

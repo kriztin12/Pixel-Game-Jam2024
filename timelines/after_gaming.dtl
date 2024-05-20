@@ -2,7 +2,7 @@ join jellychan 2
 if {playerScore} >= 500:
 	jellychan (Jellychan Happy): I must say I'm impressed!
 	jellychan: Are you sure this is your first time playing?
-	jellychan: As promised, you get to ask me anything! 
+	jellychan: As promised, you get to ask me anything!
 	jellychan: Within reason of course...
 	- How do I get to land?
 		jellychan (Jellychan Smile): Land...?
@@ -26,9 +26,11 @@ else:
 	jellychan (Jellychan Smile): Hehe I get to ask you a question now.
 	jellychan: Would you... Like to go to the arcade with me after school...?
 	- Of course!
-		jellychan: Really? Yay! 
+		jellychan: Really? Yay!
 		jellychan: It's a date then~! I'll see you after school hehe.
 	- No thanks...
 		jellychan: Ouch {playerName}... you sure know how to break a girl's heart...
-jellychan: Well I gotta head off now! 
+jellychan: Well I gotta head off now!
 jellychan: I'll see you later {playerName}~!
+do SceneManager.change_scene("res://scenes/end_scene.tscn")
+[end_timeline]
