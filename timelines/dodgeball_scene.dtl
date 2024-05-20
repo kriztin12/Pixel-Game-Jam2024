@@ -2,7 +2,6 @@
 [sound path="res://sounds/hit01.wav" volume="0.0"]
 BAM!!!
 [background arg="res://sprites/dodgeball_sprites/dodgeball.png" fade="1.0" transition="Simple Fade"]
-[music path="res://sounds/02_seaside_village.wav" fade="0.0" volume="0.0"]
 mystery: Watch it, new fish!
 join krillito (Dodgeball) 2 [animation="Slide In Right"]
 player: Ouch... I look up and I see an red orange tint-
@@ -60,6 +59,5 @@ join krillito 2
 krillito: Good thing I'm here right?
 mystery: C'mon lets turn it up and dance!
 krillito: Hey newbie, you hear that? Dance with me.
-[music fade="0.0" volume="0.0"]
 do SceneManager.change_scene("res://scenes/dance_menu.tscn")
 [end_timeline]

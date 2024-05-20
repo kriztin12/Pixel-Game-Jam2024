@@ -6,7 +6,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_5a26h"]
 font = ExtResource("2_mamlt")
 font_size = 64
-font_color = Color(0.143241, 0.57293, 0.70701, 1)
+font_color = Color(0.352941, 0.670588, 0.815686, 1)
 
 [node name="Gamecoverlol" type="Node2D"]
 

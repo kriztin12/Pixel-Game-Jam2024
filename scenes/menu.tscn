@@ -7,7 +7,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_kgbl0"]
 font = ExtResource("2_u464r")
 font_size = 20
-font_color = Color(0.181798, 0.181798, 0.181798, 1)
+font_color = Color(0.352941, 0.670588, 0.815686, 1)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
