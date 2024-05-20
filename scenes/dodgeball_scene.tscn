@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bevvx52wpofnq"]
 
 [ext_resource type="Script" path="res://scripts/dodgeball_scene.gd" id="1_tiru4"]
-[ext_resource type="Texture2D" uid="uid://d2tv47ho0sg20" path="res://sprites/dodgeball_sprites/dodgeball.png" id="2_6hsyj"]
+[ext_resource type="Texture2D" uid="uid://buibipfesw8cl" path="res://sprites/dodgeball_sprites/dodgeball.png" id="2_6hsyj"]
 [ext_resource type="PackedScene" uid="uid://cv88ykd3csevh" path="res://scenes/dodge_player.tscn" id="3_jxh7h"]
 [ext_resource type="Shader" path="res://shaders/dodgeball.gdshader" id="4_lta7g"]
 

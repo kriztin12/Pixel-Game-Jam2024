@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bp5o1de7uoium"]
+[gd_scene load_steps=9 format=3 uid="uid://bp5o1de7uoium"]
 
 [ext_resource type="Texture2D" uid="uid://bbw4e5q4xqje0" path="res://sprites/sea_invaders_sprites/sea_invaders_bg.png" id="1_3dhci"]
 [ext_resource type="Script" path="res://scripts/sea_invaders.gd" id="1_oh0wg"]
 [ext_resource type="PackedScene" uid="uid://b37j421wyjdkg" path="res://scenes/sea_invaders_player.tscn" id="2_0vbmp"]
+[ext_resource type="FontFile" uid="uid://dq5ltovg35rtn" path="res://font/PressStart2P-Regular.ttf" id="4_l31n6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xk7ow"]
 size = Vector2(20, 33)
@@ -12,6 +13,13 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 17, 0)
 }
 point_count = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_jyx13"]
+font = ExtResource("4_l31n6")
+font_size = 8
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yqo"]
+size = Vector2(128, 20)
 
 [node name="SeaInvaders" type="Node2D"]
 script = ExtResource("1_oh0wg")
@@ -46,4 +54,24 @@ position = Vector2(17, 0)
 [node name="EnemySpawnTimer" type="Timer" parent="."]
 autostart = true
 
+[node name="HealthSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(24, 8)
+
+[node name="ScoreLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 87.0
+offset_top = 2.0
+offset_right = 128.0
+offset_bottom = 12.0
+label_settings = SubResource("LabelSettings_jyx13")
+horizontal_alignment = 2
+
+[node name="EnemyDeathZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDeathZone"]
+position = Vector2(64, 118)
+shape = SubResource("RectangleShape2D_h2yqo")
+
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
+[connection signal="area_entered" from="EnemyDeathZone" to="." method="_on_enemy_death_zone_area_entered"]

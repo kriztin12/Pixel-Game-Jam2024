@@ -18,3 +18,7 @@ var score = 0
 
 # dodgeball
 var ball_count = 0
+
+#sea_invaderse
+var player_health = 3
+var player_score = 0
