@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://bp5o1de7uoium"]
+
+[ext_resource type="Texture2D" uid="uid://bbw4e5q4xqje0" path="res://sprites/sea_invaders_sprites/sea_invaders_bg.png" id="1_3dhci"]
+[ext_resource type="Script" path="res://scripts/sea_invaders.gd" id="1_oh0wg"]
+[ext_resource type="PackedScene" uid="uid://b37j421wyjdkg" path="res://scenes/sea_invaders_player.tscn" id="2_0vbmp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xk7ow"]
+size = Vector2(20, 33)
+
+[sub_resource type="Curve2D" id="Curve2D_be87b"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 17, 0)
+}
+point_count = 4
+
+[node name="SeaInvaders" type="Node2D"]
+script = ExtResource("1_oh0wg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_3dhci")
+
+[node name="SeaInvadersPlayer" parent="." instance=ExtResource("2_0vbmp")]
+position = Vector2(63, 95)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-10, 91.5)
+shape = SubResource("RectangleShape2D_xk7ow")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(138, 92)
+shape = SubResource("RectangleShape2D_xk7ow")
+
+[node name="EnemySpawn" type="Path2D" parent="."]
+curve = SubResource("Curve2D_be87b")
+
+[node name="EnemySpawnLocation" type="PathFollow2D" parent="EnemySpawn"]
+unique_name_in_owner = true
+position = Vector2(17, 0)
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]

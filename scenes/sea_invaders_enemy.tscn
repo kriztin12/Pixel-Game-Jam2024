@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7maquoko1i0n"]
+
+[ext_resource type="Script" path="res://scripts/sea_invaders_enemy.gd" id="1_tmba3"]
+[ext_resource type="Texture2D" uid="uid://bpd1goghaamc2" path="res://sprites/sea_invaders_sprites/jellyfish.png" id="2_pdu6m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i4lfo"]
+radius = 8.0
+
+[node name="SeaInvadersEnemy" type="Area2D"]
+script = ExtResource("1_tmba3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pdu6m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_i4lfo")
