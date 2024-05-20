@@ -15,9 +15,22 @@ krillito: I'm curious, what's your favorite type of music to dance to?
 	krillito: Ahh yes, it's good to slow down once in a while.
 krillito: I'm really into rock, Seavana is my favorite band.
 krillito: I know this really cool record shop called Sea Dees just a block from our school.
-krillito: Maybe we can go sometime?
+krillito (Smile): Maybe we can go sometime?
 - Sure!
-	krillito: Cool, I'll see you after school, new fish.
+	krillito (Smile): Cool, I'll see you after school, new fish.
 - Uh... no thanks
 	krillito: Right...
+player: Wait! Don't go yet.
+krillito (Default): Hmm? What was it?
+player: I had a question... I hope you don't think I'm crazy.
+krillito: Hm?
+player: What is this place?
+krillito: Oh uh... it's a school, why?
+ah he must think I'm dumb! I think I'll explore more to get answers.
+player: Ah.. sorry it's stupid... I'll see you after school then.
+krillito: Hehe you're funny, see ya new fish.
 leave krillito
+[background arg="res://backgrounds/background_underwater.png" fade="0.0"]
+[style]
+We hope you enjoyed the game! This is our first ever game jam and we hope to polish this game out more to create a full game. 
+Thanks for playing, see you on the flip side \:) 
