@@ -1,4 +1,4 @@
-[background arg="res://backgrounds/background_underwater.png" fade="0.0"]
+[background arg="res://backgrounds/background_underwater.png" fade="0.5"]
 [style]
 We hope you enjoyed the game! This is our first ever game and Game Jam! We hope to polish this game out more to create a full game.
 Thanks for playing, see you on the flip side \:)
