@@ -1,3 +1,4 @@
+[background arg="res://backgrounds/jelly_gamer_bg.png" fade="0.0"]
 join jellychan 2
 if {playerScore} >= 500:
 	jellychan (Jellychan Happy): I must say I'm impressed!

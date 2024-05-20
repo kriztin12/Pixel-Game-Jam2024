@@ -1,4 +1,4 @@
-[background fade="0.0"]
+[background arg="res://backgrounds/jelly_gamer_bg.png" fade="0.0"]
 [sound path="res://sounds/pew.wav" volume="0.0"]
 [wait time="1.0"]
 [sound path="res://sounds/pew.wav" volume="0.0"]
@@ -27,3 +27,4 @@ jellychan: To shoot, just press the SPACE bar.
 jellychan: Simple right? Whoever gets the better score wins!
 jellychan: Don't worry if you forget the controls, it'll flash on the monitor again before you play.
 do SceneManager.change_scene("res://scenes/sea_invader_menu.tscn")
+[end_timeline]
